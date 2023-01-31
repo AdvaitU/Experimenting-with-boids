@@ -69,20 +69,10 @@ void testApp::draw() {
 		ofVec3f b = boids[i]->getPosition();
 		if (a.distance(b) < 100) {
 			boyds[i]->draw(infectedColour); // Use boid's draw function to draw boids to updated position
-			ofNoFill();
-			ofSetLineWidth(2);
-			ofSetColor(255, 255, 255);
-			ofDrawCircle(512, 389, 200);
-			ofFill();
 			continue;
 		}
 		else {
 			boyds[i]->draw(colour);
-			ofNoFill();
-			ofSetLineWidth(2);
-			ofSetColor(180, 180, 180);
-			ofDrawCircle(512, 389, 50);
-			ofFill();
 			continue;
 		}
 
