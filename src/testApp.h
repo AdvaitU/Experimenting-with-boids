@@ -24,8 +24,8 @@ public:
     void mouseReleased(int x, int y, int button);
     void windowResized(int w, int h);
 
-    std::vector<Boid*> boids;
-
+    std::vector<Boid*> boids;        // Create an instance of boid
+    std::vector<Boyd*> boyds;        // Create an instance of boyds
 };
 
 #endif	
